@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototipos de Apps – APP Presencia</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <script>
+      function cambiarPrototipo() {
+        const seleccion = document.getElementById("selector").value;
+        window.location.href = seleccion;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header común -->
+    <header class="header">
+      <p class="portfolio-name">Portfolio – Laura Jordà</p>
+      <h2 class="main-title">Mis Prototipos de Apps</h2>
+      <nav class="nav">
+        <label for="selector">Selecciona prototipo:</label>
+        <select id="selector" onchange="cambiarPrototipo()">
+          <option value="prototipo1.html" selected>APP Presencia</option>
+          <option value="prototipo2.html">Presenciahr - Tablet</option>
+        </select>
+      </nav>
+    </header>
+
+    <!-- Título del prototipo actual -->
+    <h1>APP Presencia</h1>
+
+    <!-- Versión Móvil -->
+    <h2>📱 Versión Móvil</h2>
+    <div class="instrucciones">
+      <p>
+        Este es el prototipo para la
+        <span class="destacado">versión móvil</span> de la app de presencia.
+      </p>
+      <p>
+        🔐 Al iniciar, verás una pantalla de <strong>inicio de sesión</strong>.
+        No se necesitan credenciales, simplemente continúa para simular el
+        acceso.
+      </p>
+      <p>
+        📲 Una vez dentro, navega usando el
+        <span class="destacado">menú lateral</span> hacia las diferentes
+        secciones disponibles: fichajes, calendario, permisos, etc.
+      </p>
+      <p>
+        Explora cómo funcionaría la app desde tu móvil. ¡Es totalmente
+        navegable!
+      </p>
+    </div>
+    <iframe
+      width="800"
+      height="450"
+      src="https://embed.figma.com/proto/kvao8kXDbI6amE8Semelkj/App-Presencia?node-id=1-3895&scaling=scale-down&content-scaling=fixed&page-id=1%3A409&embed-host=share"
+      allowfullscreen
+    ></iframe>
+
+    <!-- Versión Ordenador -->
+    <h2>💻 Versión Ordenador</h2>
+    <div class="instrucciones">
+      <p>
+        Este prototipo corresponde a la
+        <span class="destacado">versión web desktop</span> de la aplicación.
+      </p>
+      <p>
+        🔐 También comienza simulando un inicio de sesión (sin necesidad de
+        usuario o contraseña).
+      </p>
+      <p>
+        🖱️ Una vez dentro, puedes interactuar con el menú y acceder a las
+        distintas pantallas, como lo harías desde un ordenador en la oficina.
+      </p>
+      <p>
+        Es ideal para visualizar cómo se adapta el sistema a pantallas grandes,
+        con navegación fluida e intuitiva.
+      </p>
+    </div>
+    <iframe
+      width="800"
+      height="450"
+      src="https://embed.figma.com/proto/kvao8kXDbI6amE8Semelkj/App-Presencia?node-id=1-2105&scaling=scale-down&content-scaling=fixed&page-id=1%3A408&embed-host=share"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototipo SBS Presencia</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <script>
+      function cambiarPrototipo() {
+        const seleccion = document.getElementById("selector").value;
+        window.location.href = seleccion;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header común -->
+    <header class="header">
+      <p class="portfolio-name">Portfolio – Laura Jordà</p>
+      <h2 class="main-title">Mis Prototipos de Apps</h2>
+      <nav class="nav">
+        <label for="selector">Selecciona prototipo:</label>
+        <select id="selector" onchange="cambiarPrototipo()">
+          <option value="prototipo1.html">APP Presencia</option>
+          <option value="prototipo2.html" selected>Presenciahr - Tablet</option>
+        </select>
+      </nav>
+    </header>
+
+    <!-- Contenido específico de este prototipo -->
+    <h1>Explora el prototipo de Presencia en tablet</h1>
+    <div class="instrucciones">
+      <p>
+        Bienvenidos al diseño interactivo de
+        <span class="destacado">Presencia en Tablet</span>.
+      </p>
+      <p>
+        🔁 Al hacer clic en el <span class="destacado">logo</span>, podrás
+        alternar entre la <strong>versión actual</strong> y la
+        <strong>nueva propuesta</strong>.
+      </p>
+      <p>
+        📍 Si haces clic en <span class="destacado">Pin</span>, pasarás a la
+        siguiente pantalla del flujo.
+      </p>
+      <p>
+        ⏭️ El botón <span class="destacado">Siguiente</span> te lleva una etapa
+        más allá.
+      </p>
+      <p>
+        🔁 Al llegar al final, puedes volver a empezar con los botones
+        <span class="destacado">Entrada</span> o
+        <span class="destacado">Salida</span>.
+      </p>
+      <p>
+        ⬅️ Usa <span class="destacado">Atrás</span> si deseas retroceder en
+        cualquier momento.
+      </p>
+      <p>¡Explora, prueba y cuéntame qué te parece!</p>
+    </div>
+
+    <iframe
+      width="800"
+      height="450"
+      src="https://embed.figma.com/proto/VhulTVGWcg7PfGRe6s4d2X/Presenciahr-Tablet?node-id=1-124&scaling=scale-down&content-scaling=fixed&page-id=1%3A58&starting-point-node-id=1%3A124&embed-host=share"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

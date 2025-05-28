@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Laura Jordà</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" />
+    <link rel="stylesheet" href="estilos.css" />
+
+  </head>
+  <body>
+    <!-- Background geometric shapes -->
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+
+    <!-- Header -->
+    <header>
+      <p class="portfolio-name">Portfolio de Laura Jordà</p>
+      <h1 class="main-title">Proyectos de Diseño UX/UI & Desarrollo Web</h1>
+      <nav class="nav">
+        <label for="selector">Selecciona un prototipo:</label><br /><br />
+        <select id="selector" onchange="location = this.value;">
+          <option disabled selected>-- Elige una opción --</option>
+          <option value="prototipo1.html">APP Presencia (Web + Móvil)</option>
+          <option value="prototipo2.html">Presencia en Tablet</option>
+        </select>
+      </nav>
+    </header>
+
+    <!-- Bio -->
+    <section class="bio">
+      <h2>Sobre mí</h2>
+      <p>
+        Me titulé en <span class="strong">Publicidad y Relaciones Públicas</span> por la 
+        <span class="highlight">Universidad de Alicante</span>, donde desarrollé habilidades en 
+        <span class="subtle">comunicación estratégica, creatividad publicitaria y análisis de mercado</span>.
+      </p>
+      <p>
+        Después, cursé un <span class="strong">Máster en Postproducción Digital</span> que me proporcionó experiencia en 
+        <span class="highlight">After Effects</span>, <span class="highlight">Premiere</span>, <span class="highlight">Photoshop</span>, 
+        <span class="highlight">Illustrator</span> e <span class="highlight">InDesign</span>, fortaleciendo mi capacidad para crear contenido visual profesional y dinámico.
+      </p>
+      <p>
+        Por último, finalicé el <span class="strong">CFGS en Desarrollo Web</span>, donde adquirí competencias técnicas en 
+        <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">WordPress</span> y diseño <span class="highlight">UX/UI con Figma</span>, combinando creatividad con desarrollo front-end.
+      </p>
+    </section>
+  </body>
+</html>
