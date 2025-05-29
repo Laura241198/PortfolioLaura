@@ -64,6 +64,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 header {
   display: flex;
   flex-direction: column;
@@ -73,7 +74,6 @@ header {
   max-width: 600px;
   margin: 0 auto;
 }
-
 
 .portfolio-name {
   font-size: 14px;
@@ -97,7 +97,7 @@ header {
 .nav label {
   font-weight: 600;
   margin-right: 10px;
-  color: #cde6ff;
+  
 }
 
 .nav select {
@@ -114,6 +114,48 @@ header {
 .nav select:focus {
   box-shadow: 0 4px 16px rgba(0, 205, 250, 0.5);
   outline: none;
+}
+
+/* === RADIO BUTTONS ACTUALIZADOS === */
+.radio-option {
+  display: block;
+  margin: 12px 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #222;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.radio-option:hover {
+  background-color: #f0f4ff;
+  color: #000;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #6c63ff;
+}
+
+/* === BOTÓN DE ENVÍO === */
+.submit-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #5148c3;
 }
 
 /* === TITULOS PRINCIPALES === */
@@ -226,6 +268,10 @@ iframe {
   }
 
   .bio p {
+    font-size: 16px;
+  }
+
+  .radio-option {
     font-size: 16px;
   }
 }

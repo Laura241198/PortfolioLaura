@@ -6,7 +6,6 @@
     <title>Portfolio Laura Jordà</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" />
     <link rel="stylesheet" href="estilos.css" />
-
   </head>
   <body>
     <!-- Background geometric shapes -->
@@ -18,12 +17,19 @@
       <p class="portfolio-name">Portfolio de Laura Jordà</p>
       <h1 class="main-title">Proyectos de Diseño UX/UI & Desarrollo Web</h1>
       <nav class="nav">
-        <label for="selector">Selecciona un prototipo:</label><br /><br />
-        <select id="selector" onchange="location = this.value;">
-          <option disabled selected>-- Elige una opción --</option>
-          <option value="prototipo1.html">APP Presencia (Web + Móvil)</option>
-          <option value="prototipo2.html">Presencia en Tablet</option>
-        </select>
+        <p>Selecciona una categoría:</p>
+        <form id="category-form">
+          <label class="radio-option">
+            <input type="radio" name="category" value="prototipo1.html" />
+            Prototipos UX/UI
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="category" value="audiovisual.html" />
+            Postproducción Audiovisual
+          </label>
+          <br /><br />
+          <button type="submit" class="submit-button">Ir</button>
+        </form>
       </nav>
     </header>
 
@@ -45,5 +51,18 @@
         <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">WordPress</span> y diseño <span class="highlight">UX/UI con Figma</span>, combinando creatividad con desarrollo front-end.
       </p>
     </section>
+
+    <script>
+      // Redirigir según la opción seleccionada
+      document.getElementById("category-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const selected = document.querySelector('input[name="category"]:checked');
+        if (selected) {
+          window.location.href = selected.value;
+        } else {
+          alert("Por favor, selecciona una categoría.");
+        }
+      });
+    </script>
   </body>
 </html>
